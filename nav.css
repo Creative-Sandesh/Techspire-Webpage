@@ -2,26 +2,35 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #f4f4f4;
 }
-.header{
-    background-color: #fff;
+.container{
+    background-image: url(first_banner.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 .nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 20px;
+    
+    
 }
 .nav_container{
+    flex: 1;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 100%;
+
 }
 .navbar_logo img{
     width: 150px;
@@ -32,12 +41,15 @@ body{
     display: flex;
     justify-content: space-between;
     align-items:center;
-    gap: 20px;
+    width: 75%;
     list-style: none;
 }
 .navbar-nav{
+    
     display: flex;
+    align-items: center;
     gap: 20px;
+    
 }
 
 .nav-item a{
@@ -84,4 +96,23 @@ body{
 .apply-btn a:hover{
     background-color: red;
     color: #fff;
+}
+
+.hero-section{
+    
+    z-index: ;
+}
+.hero-section-container{
+    background-image: url(first_banner.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.hero-section-container h2{
+    font-size: 36px;
+    margin-bottom: 20px;
 }
