@@ -1,89 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Techspire College</title>
-    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="nav.css" />
 </head>
+
 <body>
     <div class="container">
- <nav class="nav">
+        <nav class="nav">
             <!-- nav big container -->
-    <div class="nav_container">
-        <a href="#" class="navbar_logo">
-       
-            <img src="logo.png" alt="" srcset="">  </a>
+            <div class="nav_container">
+                <a href="#" class="navbar_logo">
+                    <img src="logo.png" alt="" srcset="" />
+                </a>
+                <div class="opacity"></div>
+                <!-- nav bar inside content -->
+                <div id="navcontent">
+                    <div id="navCrop">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href=".">Overview</a>
+                            </li>
 
-            <!-- nav bar inside content -->
-            <div id="navcontent">
-                <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a href="#">About Us</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">About College</a></li>
+                                    <li><a href="#">About University</a></li>
+                                    <li><a href="#">Our Leader</a></li>
+                                </ul>
+                            </li>
 
-                    <li class="nav-item">
-                        <a href=".">Overview</a>
-                    </li>
+                            <li class="nav-item dropdown">
+                                <a href="#">Courses</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Bsc IT</a></li>
+                                    <li><a href="#">MBA</a></li>
+                                </ul>
+                            </li>
 
-                    <li class="nav-item dropdown">
-                        <a href="#">About Us</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">About College</a></li>
-                            <li><a href="#">About University</a></li>
-                            <li><a href="#">Our Leader</a></li>
+                            <li class="nav-item dropdown">
+                                <a href="#">Admission</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Admission Procedure</a></li>
+                                    <li><a href="#">Admission Form</a></li>
+                                    <li><a href="#">Admission Intake</a></li>
+                                    <li><a href="#">Admission Scholarship</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#">Explore Techspire</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Our Club</a></li>
+                                    <li><a href="#">Our Blog</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item"><a href="#">Career</a></li>
+
+                            <li class="nav-item"><a href="#">Contact Us</a></li>
                         </ul>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a href="#">Courses</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Bsc IT</a></li>
-                            <li><a href="#">MBA</a></li>
-                        </ul>
-                    </li>
-                    
-                    <li class="nav-item dropdown">
-                        <a href="#">Admission</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Admission Procedure</a></li>
-                            <li><a href="#">Admission Form</a></li>
-                            <li><a href="#">Admission Intake</a></li>
-                            <li><a href="#">Admission Scholarship</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item"><a href="#">Explore Techspire</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Our Club</a></li>
-                        <li><a href="#">Our Blog</a></li>
-                    </ul>
-                    </li>
-
-                    <li class="nav-item"><a href="#">Career</a></li>
-
-                    <li class="nav-item"><a href="#">Contact Us</a></li>
-                    
-                </ul>
-<!-- apply button in nav -->
-                <div class="apply-btn">
-                <a href="#">Apply Now</a>
-             </div>
+                        <!-- apply button in nav -->
+                        <div class="apply-btn">
+                            <a href="#">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-               
-    </div>
-</nav>
-    
+        </nav>
 
-    <!--  hero section banner-->
+        <!--  hero section banner-->
 
-    
-    <section class="hero-section">
-        <div class="hero-section-container">
-            <h2>Welcome to Techspire College</h2>
-            <a href="#">View Vacancy ---&gt;</a>
+        <section class="hero-section">
+            <div class="hero-section-container">
+                <h2>Welcome to Techspire College</h2>
+                <a href="#">View Vacancy ---&gt;</a>
+            </div>
+        </section>
+    </div>  
+        <!-- Career Form Section -->
+        <section class="career-form-section">
+            <div class="career-form-card">
+                <h2>Start Your <span style="color: red;">Career</span> With Us</h2>
+                <form class="career-form">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <select required>
+                        <option value="">Select Course</option>
+                        <option value="mba">Master of Business Administration</option>
+                        <option value="bscit">Bsc IT</option>
+                    </select>
+                    <input type="text" placeholder="Contact Number" required>
+                    <button type="submit">Submit &rarr;</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section">
+            <div class="about-container">
+                <h2><span style="color: #222;">About</span> <span style="color: red;">Techspire College</span></h2>
+                <div class="about-content">
+                    <p class="about-title"><strong>Best Management & IT College in Kathmandu, Nepal</strong></p>
+                    <p><span style="color: red;">Techspire</span>, located in New Baneshwor, Kathmandu, provides modern facilities, emphasizing a conducive learning environment. In 2017, the college partnered with the Asia Pacific University of Technology and Innovation (APU), offering world-class tech and business education in Nepal. This collaboration ensures international exposure and prepares students for dynamic and competitive industries in IT and business. Techspire College facilitates tech learning through partnership with Code Himalaya, one of Nepal's rapidly expanding IT enterprises.</p>
+                    <a href="#" class="about-link">More About Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Overview Section -->
+        <section class="overview-section">
+            <div class="overview-container">
+                <h2><span style="color: #222;">Why Techspire College?</span> </h2>
+                <!-- <p class="overview-title"><strong>Best Management & IT College in Kathmandu, Nepal</strong></p> -->
+                <ul class="overview-highlights">
+                    <li><strong>Run By IT Industry:</strong> <br>Operated by Code Himalaya, a leading IT company, ensuring industry-relevant curriculum and networking.</li>
+                    <li><strong>Practical Tech Learning & Job Placement:</strong><br> 25+ noncredit courses and hands-on sessions led by industry experts.</li>
+                    <li><strong>Entrepreneurship & Seed Funding:</strong><br> Seed funding for students to foster business and innovation.</li>
+                    <li><strong>Dual Curriculum:</strong><br> Combines academic and industry learning for skillful, competent graduates.</li>
+                    <!-- <li><strong>Industry Embedded Curriculum:</strong> Four days theory, two days practical, plus daily extra support for real-world application.</li>
+                    <li><strong>Leadership Development:</strong> Focus on communication, decision-making, and capacity building.</li>
+                    <li><strong>International Exposure:</strong> University visits and collaboration with Asia Pacific University (APU), Malaysia.</li>
+                    <li><strong>Scholarship Programs:</strong> MBA and BSc IT scholarships available.</li>
+                    <li><strong>Impressive Stats:</strong> 23 years of excellence, 180,000+ alumni, 700 current students, 95% employed graduates.</li> -->
+                </ul>
+                
+            </div>
+            <div class="counter-section ">
+        <div class="counter-container">
+            <div class="counter-data ">
+                <h2 class="h1  ">23</h2>
+                <h6 class="p ">Years of Excellence</h6>
+            </div>
+            <div class="counter-data">
+                <h2 class="h1  ">180,000+</h2>
+                <h6 class="p ">University Alumni</h6>
+            </div>
+            <div class="counter-data">
+                <h2 class="h1  ">700</h2>
+                <h6 class="p ">Current Students</h6>
+            </div>
+            <div class="counter-data">
+                <div class="d-flex justify-content-center">
+                    <h2 class="h1  ">95%</h2>
+                </div>
+                <h6 class="p ">Employed Graduates</h6>
+            </div>
         </div>
-    </section>
-    </div>
-       
+            
+        </div>
+        </section>
 
-    
+        <!-- Industry Embedded Curriculum Section -->
+        <section class="industry-curriculum-section">
+            <div class="industry-curriculum-container">
+                <h2 class="industry-title"><span style="color: red;">Industry Embedded Curriculum</span></h2>
+                <p class="industry-subtitle">Three Key Pillars in developing industry embedded curriculum</p>
+                <div class="industry-pillars">
+                    <div class="pillar-card">
+                        <img src="https://techspire.edu.np/frontend/assets/icons/industry1.svg" alt="Learning Pedagogy" class="pillar-icon">
+                        <h3>Learning Pedagogy</h3>
+                        <p>Academic classes for four days a week, where they receive theoretical instruction and engage in discussions related to the curriculum. Additionally, there are two days dedicated to practical classes, allowing students to apply their knowledge in hands-on learning experience.</p>
+                    </div>
+                    <div class="pillar-card">
+                        <img src="https://techspire.edu.np/frontend/assets/icons/industry1.svg" alt="Non credit course" class="pillar-icon">
+                        <h3>Non credit course for practical exposure</h3>
+                        <p>To further enhance the learning process, there is an extra one-hour class every day, providing additional support and reinforcing key concepts. This innovative approach aims to strike a balance between theoretical understanding and real-world application, promoting a more holistic and effective learning experience for students.</p>
+                    </div>
+                    <div class="pillar-card">
+                        <img src="https://techspire.edu.np/frontend/assets/icons/industry1.svg" alt="Leadership Development" class="pillar-icon">
+                        <h3>Leadership Development</h3>
+                        <p>Through leadership development initiatives, students can hone their leadership qualities, communication skills, and decision-making abilities, preparing them for future leadership roles in their careers. Furthermore, capacity building activities focus on enhancing students' capabilities and competencies, equipping them with the necessary skills to excel in their chosen fields.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 </body>
+
 </html>
