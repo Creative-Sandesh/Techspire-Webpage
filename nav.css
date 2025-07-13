@@ -309,7 +309,7 @@ body{
 }
 
 .counter-section {
-   
+    background: #dcdcdc;
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 30px;
@@ -323,4 +323,69 @@ body{
 }
 .counter-data{
     padding: 0 20px;
+}
+.industry-curriculum-section {
+    background: #fff;
+    padding: 60px 0 40px 0;
+    width: 100%;
+    text-align: center;
+}
+.industry-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #b30000;
+}
+.industry-subtitle {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+.industry-pillars {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.pillar-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+    padding: 30px 24px;
+    max-width: 340px;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.pillar-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+}
+.pillar-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #222;
+}
+.pillar-card p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+@media (max-width: 1100px) {
+    .industry-pillars {
+        gap: 20px;
+    }
+    .pillar-card {
+        max-width: 100%;
+    }
+}
+@media (max-width: 900px) {
+    .industry-pillars {
+        flex-direction: column;
+        align-items: center;
+    }
 }
