@@ -6,19 +6,43 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #fff;
 }
 .container{
     background-image: url(first_banner.jpg);
     background-size: cover;
-    background-position: center;
-    padding: 50px;
+    
+    height: 90vh;
     text-align: center;
     color: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: -2;
+    
+
+    
 }
+.container{
+    content: "";
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+.opacity {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.4; /* adjust this value as needed */
+   z-index: -1;
+} 
+
+
+
 .nav{
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,27 +52,43 @@ body{
 .nav_container{
     flex: 1;
     display: flex;
-    justify-content: space-around;
+    justify-content:space-between;
     align-items: center;
-
+    
+    
 }
 .navbar_logo img{
     width: 150px;
     height: auto;
+    margin:0 15px
 }
 #navcontent{
-    
+   
     display: flex;
     justify-content: space-between;
-    align-items:center;
-    width: 75%;
+    align-items: center;
     list-style: none;
+    
+    padding-bottom: 50px;
+}
+#navCrop{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    border-bottom-left-radius: 20px;
+    padding :50px;
+    gap: 17rem;
+
+    
 }
 .navbar-nav{
-    
+     /* background-color: #fff; */
     display: flex;
     align-items: center;
     gap: 20px;
+    
     
 }
 
@@ -99,20 +139,155 @@ body{
 }
 
 .hero-section{
-    
-    z-index: ;
+   
+    /* z-index: ; */
 }
 .hero-section-container{
-    background-image: url(first_banner.jpg);
-    background-size: cover;
-    background-position: center;
-    padding: 50px;
-    text-align: center;
+    margin: 6rem 0 0 19rem;
+    padding: 8rem 0;
+    text-align: left;
     color: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    
 }
 .hero-section-container h2{
-    font-size: 36px;
+    font-size: 3rem;
+    width: 45%;
+    
+}
+.hero-section-container a{
+    font-size: 2rem;
+    color: #fff;
+    
+}
+.career-form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -120px;
+    position: relative;
+    z-index: 2;
+}
+.career-form-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+    padding: 40px 30px;
+    max-width: 900px;
+    width: 100%;
+    text-align: left;
+}
+.career-form-card h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #222;
+}
+.career-form {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.career-form input,
+.career-form select {
+    flex: 1 1 180px;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.career-form button {
+    background: red;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 32px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.career-form button:hover {
+    background: #b30000;
+}
+.about-section {
+    background: #fff;
+    padding: 60px 0 40px 0;
+    width: 100%;
+}
+.about-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.about-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #222;
+}
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    font-size: 1.1rem;
+    color: #333;
+}
+.about-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #222;
+}
+.about-link {
+    color: red;
+    text-decoration: underline;
+    font-weight: 500;
+    margin-top: 10px;
+    display: inline-block;
+    transition: color 0.2s;
+}
+.about-link:hover {
+    color: #b30000;
+}
+.overview-section {
+    background: #fff;
+    padding: 60px 0 40px 0;
+    width: 100%;
+}
+.overview-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.overview-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #222;
+}
+.overview-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #222;
     margin-bottom: 20px;
+}
+.overview-highlights {
+    list-style: disc inside;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.08rem;
+    line-height: 1.7;
+}
+.overview-link {
+    color: red;
+    text-decoration: underline;
+    font-weight: 500;
+    margin-top: 10px;
+    display: inline-block;
+    transition: color 0.2s;
+}
+.overview-link:hover {
+    color: #b30000;
 }
